@@ -4,11 +4,18 @@
   box-sizing: border-box;  
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
  section{
      margin-top: 50px;
+ }
+ .tittle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    letter-spacing: 9.5px;
+    word-spacing: 14px;
+
  }
 
 form{
@@ -16,33 +23,38 @@ form{
     margin: auto;
     align-items: center;
     justify-content: center;
+    border: 1px solid gray;
+    width: fit-content;
+    border-radius: 5px;
 }
 input{
-     display: flex;
+    display: flex;
     width: 400px;
-    /* margin: auto; */
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    padding: 5px;
-    border: 2px solid dimgray;
-    border-radius: 5px;
+    border: none;
+    padding: 10px;
 }
-h1{
-    text-align: center;
-    font-size: 50px;
+button{   
+    border:none; 
+    padding: 10px; 
+    font-weight: 700; 
+    background-color: green;
 }
-button{
-    margin-top:20px;
-    padding: 5px;
-    border:2px solid dimgray;
-    border-radius: 5px;
-    background-color: rgb(92, 187, 92);
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
 }
+p{
+    font-family: 'Merriweather', serif;
+}
+
 .search-result{
+    font-family: 'Merriweather', serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20pxpx;
     margin-top: 10px;
+    color: rgb(228, 150, 228);
 }
 .meals{
     display: grid;
@@ -53,15 +65,42 @@ button{
 .meal{
     cursor: pointer;
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 285px;
+    width: 272px;
     text-align: center;
-    background-color: gray;
+    background-color: lightgray;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 8px;
 }
 .meals img{
-    height: 100%;
-    width: 100%;
-    border: 2px solid dimgray;
-    border-radius: 2px;
+    height: 90%;
+    width: 95%;
+    border-radius: 5px;
      
+}
+#meal-details{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+
+}
+#meal-details img{
+    width: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+#meal-details h1{
+    margin-top: 10px;
+    font-family: 50px;
+}
+span{
+    background-color: dimgray;
+     font-weight: 700;
+}
+hr{   
+border: dotted #87cfcf 6px;
+border-bottom: none;
+width: 4%;
+margin: 50px auto;
 }
